@@ -2,7 +2,7 @@
 #include <iostream>
 #include <px4_msgs/msg/vehicle_odometry.hpp>
 #include "rclcpp/rclcpp.hpp"
-#include "tf2_geometry_msgs/tf2_geometry_msgs.h"
+#include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
 void convert(tf2::Quaternion q_ned) {
   tf2::Matrix3x3 ned2enu(0, 1, 0, 1, 0, 0, 0, 0, -1);
